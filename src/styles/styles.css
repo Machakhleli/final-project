@@ -2,11 +2,6 @@
   margin: 0;
   padding: 0;
 }
-.row{
-  width: 100%;
-  display: flex;
-  
-}
 
 /* html {
   height: 100%; } */
@@ -15,24 +10,47 @@
   height: 100vh;
   background: #FDF6E3; } */
 
-.container {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-  height: 80%;
-  outline: none;
-}
-.logo{
-  max-width: 100px;
-  max-height: 100px;
-  border: 2px solid rgba(243, 193, 101, 0.521);
-}
-.logo img{
+#header {
   width: 100%;
-  height: 100%;
-  
+  height: 100px;
+  margin: 0;
+  padding: 0;
 }
 
+.nav{
+  width: 100%;
+  height: 80px;
+}
+.top{
+  width: 100%;
+
+
+}
+.container {
+  width: 100%;
+  height: 80px;
+  outline: none;
+  left: 0;
+  right: 0;
+}
+.row {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  width: 4em;
+  height: 4em;
+  border: 2px solid rgba(243, 193, 101, 0.521);
+  /* position: relative; */
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+  /* position: absolute; */
+}
 
 .search-container {
   overflow: hidden;
@@ -60,7 +78,7 @@
 }
 
 input {
-  -moz-appearance:none;
+  -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
   float: left;
@@ -107,37 +125,133 @@ input:focus {
   border: 0 !important;
   text-shadow: 0 0 0;
 }
-.button img{
+.button img {
   width: 100%;
 }
 .button i {
   font-size: 85%;
 }
 
-
-
-
-
-
-
-/*პირველი ნავბარის ცსს*/
-/* #logo-main {
-  display: block;
-  margin: 20px auto;
+.right {
+  width: 4em;
+  display: flex;
+  max-width: 5%;
+  height: 4em;
+  top: 0;
+  left: 0;
 }
-#navbar-primary.navbar-default {
-  background: transparent;
-  border: none;
-}
-.navbar-nav {
+
+.drop-wrap {
   width: 100%;
-  text-align: center;
+  overflow: unset;
 }
-li {
-  display: inline-block;
-  float: none;
+.dropdown {
+  width: 100%;
+   height: 10px;
+   position: relative;
 }
-a {
-  padding-left: 30px;
-  padding-right: 30px;
-} */
+
+.drop-btn button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid rgb(223, 213, 213);
+  border-radius: 40%;
+ cursor: pointer;
+}
+.dropdown .selected {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid rgb(223, 213, 213);
+  border-radius: 40%;
+  cursor: pointer;
+  height: 40px;
+  padding: 0 15px!important;
+}
+.selected span {
+  font-size: 14px;
+  color: #546e7a;
+}
+ span img {
+  width: 100%;
+  height: 10vh;
+  transition-delay: 0.2s;
+  margin-right: 0;
+ }
+ button img {
+  width: 60%;
+  height: 30px;
+  margin-left: 0;
+  padding: 0;
+  border: 2px solid white;
+  vertical-align: middle;
+}
+
+.languages{
+  background-color: #F0F7FC;
+  position: absolute;
+  top: calc( 100% + 10px);
+  left: 0px;
+  width: 100%;
+  border-radius: 12px;
+  max-height: 0px;
+  padding: 0px 10px;
+  /* overflow: hidden; */ დაიმაება კონტენტი
+  left: 50%;
+  transform: translateX(-50%);
+  /* width: 300px;
+  background-color: white; */
+}
+
+ul{
+  list-style-type: none;
+}
+.user{
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  background-color: #f0d0ad62;
+}
+ .user img{
+  margin-top: 20%;
+  margin-left: 10%;
+  align-items: center;
+  width: 80%;
+  height: 50%;
+  
+ }
+ .bottom{
+  width: 100%;
+ }
+ .container2{
+  width: 100%;
+}
+
+ .menu{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+ }
+ .menu ul{
+  font-size:larger;
+  display: flex;
+  justify-content: center;
+  gap:20px
+ }
+ .menu a{
+  width: 100px;
+  height: 40px;
+  margin-right: 25%;
+  border-radius: 30%;
+  background-color:#aff0ad62;
+ }
+ .menu a img{
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+  align-items: center;
+ }
+
