@@ -20,7 +20,6 @@ body {
   height: 150px;
   margin: 0;
   padding: 0;
-  
 }
 
 .nav {
@@ -174,7 +173,7 @@ input:focus {
   gap: 20px;
   list-style-type: none;
 }
-.menu ul li{
+.menu ul li {
   color: rgb(240, 255, 242);
   font-family: "Tangerine", serif;
   font-size: normal;
@@ -217,13 +216,15 @@ input:focus {
   background-size: cover; */
 }
 
-#section1 .container .container2 {
+#section1 .container {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 .services {
   width: 100%;
+  /* display: flex;
+  flex-direction: column; */
 }
 .main-title h1 {
   margin-left: 85px;
@@ -240,7 +241,6 @@ input:focus {
 }
 .servises .window {
   width: 100%;
-  background: transparent ;
 }
 
 .services .window .service {
@@ -248,7 +248,6 @@ input:focus {
   transition: 0.2s;
   display: flex;
   align-items: center;
-
   position: relative;
 }
 .service img {
@@ -257,6 +256,170 @@ input:focus {
   background-color: #523f3942;
   border-radius: 12%;
 }
-.slider{
-  
+.slider {
+  width: 300px;
+  position: relative;
+}
+.offer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.discovery main-margin {
+  margin-top: 80px !important;
+}
+.discovery main-margin .row {
+  margin-left: -10px;
+  margin-right: -10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.discover .left-side {
+  height: 100%;
+}
+.discover .discover-title {
+  font-size: 50px;
+  color: #37474f;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: inline-flex;
+  text-shadow: 0px 6px #bac3c9;
+  position: relative;
+  z-index: 21;
+  font-family: secondary-font;
+}
+.discover .background-title {
+  color: #f0f7fc;
+  font-size: 100px;
+  position: absolute;
+  color: #f0f7fc;
+  z-index: 19;
+  left: 0;
+  top: -40px;
+  opacity: 60%;
+  font-family: secondary-font;
+  pointer-events: none;
+  display: none;
+}
+.discover .left-side .title {
+  color: rgb(240, 255, 242);
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  position: relative;
+  z-index: 21;
+  font-family: helvetica-black;
+}
+.discover .left-side .text p {
+  font-size: 16px;
+  font-family: roman;
+}
+.discover .left-side .next-slide {
+  margin-top: 30px;
+  width: 45px;
+  height: 45px;
+  border-radius: 16px;
+  border: 2px solid #e1effa;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.col-xl-7 col-lg-12 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.discover svg {
+  width: 100%;
+  height: inherit;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+.main-title {
+  cursor: pointer;
+  line-height: 1;
+  font-size: 26px;
+  font-family: capsbold;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5px;
+  transition: 0.5s ease-out;
+  width: fit-content;
+  background: linear-gradient(
+    to right,
+    rgb(240, 255, 242) 50%,
+    rgb(240, 255, 242) 50%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+}
+.medium-title {
+  line-height: 1;
+  font-family: roman;
+  font-size: 13px;
+  width: 100%;
+  text-align: center;
+  color: #546e7a;
+  display: block;
+}
+.relative {
+  position: relative;
+}
+@media (max-width: 1420px) .default-box .img-frame {
+  height: 160px;
+}
+a {
+  text-decoration: none;
+  color: #546e7a;
+}
+.default-box .img-frame .img {
+  transition: 0.2s ease-in;
+  transform: scale(1);
+}
+.img-frame .img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.default-box .location-title {
+  font-size: 12px;
+  font-family: roman;
+  color: #546e7a;
+  margin-bottom: 5px;
+  display: block;
+  transition: 0.2s;
+}
+.default-box .location-title img {
+  height: 15px;
+  width: fit-content;
+}
+.main-block .title-wrapper {
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+.main-block .title-wrapper .title {
+  font-size: 19px;
+  font-family: light-b;
+  color: #455a64;
+}
+.main-block .title-wrapper a {
+  font-family: roman;
+  color: #546e7a;
+  font-size: 12px;
+  line-height: 1;
+  display: inherit;
+  margin-top: 5px;
+  transition: 0.2s;
+  width: fit-content;
+}
+.main-block .title-wrapper a img {
+  position: relative;
+  transition: 0.4s ease-in-out;
+  left: 0;
 }
