@@ -220,10 +220,7 @@ input:focus {
 #section1 .container .container2 {
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  margin: 0;
+  flex-direction: column;
 }
 .services {
   width: 100%;
@@ -259,4 +256,7 @@ input:focus {
   height: 50px;
   background-color: #523f3942;
   border-radius: 12%;
+}
+.slider{
+  
 }
