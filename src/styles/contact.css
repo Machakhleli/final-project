@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgba(199, 182, 126, 0.459);
+  align-items: center;
+}
+#contact {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 50px;
+}
+#contact .container {
+  width: 100%;
+  margin-top: 60px;
+}
+.row {
+  width: 100%;
+}
+#contact .container .row .map {
+  text-align: center;
+}
+.contact_form {
+  font-size: larger;
+  text-align: center;
+}
+.box {
+  margin-top: 10px;
+}
+.submit {
+  color: aquamarine;
+}
+
+.contact-page {
+  width: 30px;
+  height: 30px;
+}
