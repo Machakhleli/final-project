@@ -139,8 +139,9 @@ input:focus {
 .user {
   width: 4em;
   height: 4em;
+  border: 2px solid #f0856452;
   border-radius: 50%;
-  background-color: #d6451862;
+  /* background-color: #d6451862; */
   position: relative;
 }
 
