@@ -270,7 +270,7 @@ input:focus {
 .main-title h1 {
   color: rgb(240, 255, 242);
   font-family: "Tangerine", serif;
-  font-size: normal;
+  font-size: 25px;
   text-shadow: 4px 4px 4px #aaa;
   align-items: center;
 }
