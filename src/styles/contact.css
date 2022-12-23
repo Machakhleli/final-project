@@ -9,7 +9,7 @@ html body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #91b9f8;
+  background-color: #73b6f55d;
   margin: auto;
 }
 html body .container {
@@ -18,18 +18,6 @@ html body .container {
   height: 80vh;
   display: grid;
   grid-template-columns: 1fr;
-}
-html body .container h2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #163568;
-  text-align: center;
-  margin-bottom: 10px;
-}
-html body .container h2 span {
-  color: #efefef;
-  padding-right: 5px;
 }
 html body .container .box {
   display: grid;
@@ -40,21 +28,34 @@ html body .container .box .info {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #61b1f3;
-  color: #163568;
+  background-image: url(/src/img/contact.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  color: #ec8f25;
+}
+html body .container .box .info img {
+  width: 20%;
+  height: 20%;
 }
 html body .container .box .info h4 {
   margin: 10px 0;
+  color: rgba(233, 59, 68, 0.815);
+  font-family: "Tangerine", serif;
+  font-size: normal;
+  text-shadow: 4px 4px 4px #aaa;
+  align-items: center;
 }
 html body .container .box .info p {
+  color: rgba(233, 59, 68, 0.815);
+  font-family: "Tangerine", serif;
+  font-size: normal;
+  text-shadow: 4px 4px 4px #aaa;
+  align-items: center;
   margin: 5px 0px;
 }
 html body .container .box .info p:nth-child(4) {
   margin-bottom: 20px;
-}
-html body .container .box h3 {
-  background: #efefef;
-  padding: 10px;
 }
 html body .container .box form {
   width: 100%;
@@ -62,17 +63,26 @@ html body .container .box form {
   background: #efefef;
   padding: 10px 10px;
 }
-html body .container .box form .name, html body .container .box form .company, html body .container .box form .email, html body .container .box form .tele {
+html body .container .box form .name,
+html body .container .box form .lastname,
+html body .container .box form .email,
+html body .container .box form .tele {
   margin-bottom: 20px;
 }
-html body .container .box form .name label, html body .container .box form .company label, html body .container .box form .email label, html body .container .box form .tele label {
+html body .container .box form .name label,
+html body .container .box form .lastname label,
+html body .container .box form .email label,
+html body .container .box form .tele label {
   font-size: 14px;
   opacity: 0.9;
 }
-html body .container .box form .name input, html body .container .box form .company input, html body .container .box form .email input, html body .container .box form .tele input {
+html body .container .box form .name input,
+html body .container .box form .lastname input,
+html body .container .box form .email input,
+html body .container .box form .tele input {
   padding: 5px;
   outline: none;
-  border: 1px solid #61b1f3;
+  border: 1px solid #f3ca59;
   width: 95%;
   height: 60%;
 }
@@ -88,14 +98,14 @@ html body .container .box form .message #message {
   width: 100%;
   padding: 5px;
   outline: none;
-  border: 1px solid #61b1f3;
+  border: 1px solid #f3ca59;
 }
 html body .container .box form .submit {
   grid-column: 0.3333333333;
 }
-html body .container .box form .submit input[type=submit] {
+html body .container .box form .submit input[type="submit"] {
   cursor: pointer;
-  background: #61b1f3;
+  background: #f3ca59;
   letter-spacing: 0.2em;
   padding: 10px;
   outline: none;
@@ -109,7 +119,8 @@ html body .container .box form .submit input[type=submit] {
   transition: 0.3s linear;
   font-weight: bold;
 }
-html body .container .box form .submit input[type=submit]:hover, html body .container .box form .submit input[type=submit]:focus {
+html body .container .box form .submit input[type="submit"]:hover,
+html body .container .box form .submit input[type="submit"]:focus {
   color: #efefef;
   background: #163568;
 }
@@ -118,17 +129,21 @@ html body .container .box form .submit input[type=submit]:hover, html body .cont
     justify-content: flex-start;
     align-items: flex-end;
     font-size: 2em;
- }
+  }
   html body .container .box {
     grid-template-columns: 1fr 2fr;
- }
+  }
   html body .container .box .info {
     grid-row: 0.3333333333;
     font-size: 1.2em;
- }
+  }
 }
-
-
+.map .container .map-center {
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* * {
   margin: 0;
@@ -169,7 +184,6 @@ body {
   width: 30px;
   height: 30px;
 } */
-
 
 /* .last {
   background-color: #282832;

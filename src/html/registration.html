@@ -2,48 +2,37 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <title>Registration Form</title>
-    <link rel="stylesheet" href="/src/styles/registration.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles/registration.css">
+    <title>რეგისტრაცია</title>
 </head>
 
 <body>
-    <h1>სარეგისტრაციო ფორმა</h1>
-    <p>გთხოვთ შეიყვანოთ მოთხოვნილი ინფორმაცია</p>
-    <form>
-        <fieldset>
-            <label for="first-name">
-                <input id="first-name" type="text" placeholder="სახელი" required />
-            </label>
-            <label for="last-name">
-                <input id="last-name" type="text" placeholder="გვარი" required />
-            </label>
-            <label for="email">
-                <input id="email" type="email" placeholder="E-mail" required />
-            </label>
-            <label for="new-password">
-                <input id="new-password" type="password" pattern="[a-z0-5]{8,}" placeholder="პაროლი" required />
-            </label>
-            <label for="confirm-password">
-                <input id="new-password" type="password" pattern="[a-z0-5]{8,}" placeholder="გაიმეორე პაროლი"
-                    required />
-            </label>
-        </fieldset>
+    <form action="/action_page.php" id="action-page">
+        <div class="container">
+            <h1>რეგისტრაცია</h1>
+            <hr>
 
-        <fieldset>
-            <label for="profile-picture">ატვირთე ფოტო:
-                <input type="file" id="profile-picture" name="file" />
-            </label>
-            <label for="age">
-                <input type="number" min="13" max="120" id="age" name="number" placeholder="ასაკი" />
-            </label>
+            <label for="email"></label>
+            <input type="text" placeholder="ელ.ფოსტა" name="email" required>
 
-            <label for="bio">
-                <textarea name="bio" id="bio" cols="30" rows="10"
-                    placeholder="შეგიძლია დაწერო დამატებითი ინფორმაცია"></textarea>
+            <label for="psw"></label>
+            <input type="password" placeholder="პაროლი" name="psw" required>
+
+            <label for="psw-repeat"></label>
+            <input type="password" placeholder="გაიმეორე პაროლი" name="psw-repeat" required>
+
+            <label>
+                <input type="checkbox" checked="checked" name="remember" class="checkbox">
+                დამახსოვრება
             </label>
-        </fieldset>
-        <input type="submit" value="რეგისტრაცია" />
+            <div class="clearfix">
+                <button type="button" class="cancelbtn">გაუქმება</button>
+                <button type="submit" class="signupbtn">დარეგისტრირდი</button>
+            </div>
+        </div>
     </form>
 </body>
 

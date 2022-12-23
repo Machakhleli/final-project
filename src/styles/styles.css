@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
 }
 
 html {
@@ -10,22 +9,21 @@ html {
 body {
   width: 100%;
   height: 100%;
-  background-image: url(/src/img/sunset3.jpg);
+  background-image: url(/src/img/SunsetFeeling-e1512674741646.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 100%;
 }
 #header {
   width: 100%;
   height: 150px;
   margin: 0;
   padding: 0;
+  background-color: rgba(22, 22, 107, 0.466);
 }
 
 .nav {
   width: 100%;
   height: 150px;
-  /* display:flexbox; */
 }
 .top {
   width: 100%;
@@ -50,12 +48,12 @@ body {
   width: 4em;
   height: 4em;
   border: 2px solid rgba(243, 193, 101, 0.521);
-  /* position: relative; */
+  border-radius: 30%;
 }
 .logo img {
   width: 100%;
   height: 100%;
-  /* position: absolute; */
+  border-radius: 30%;
 }
 #logos {
   gap: 3%;
@@ -159,7 +157,6 @@ input:focus {
   width: 100%;
   height: 50%;
   align-items: center;
-  /* margin-top: 10px; */
 }
 .bottom .row {
   width: 100%;
@@ -254,6 +251,7 @@ input:focus {
 #section1 {
   width: 100%;
   height: 100vh;
+  background-color: rgba(22, 22, 107, 0.466);
 }
 
 #section1 .container {
@@ -263,31 +261,43 @@ input:focus {
 }
 .services {
   width: 100%;
-}
-.main-title h1 {
-  color: rgb(112, 187, 122);
-  font-family: "Tangerine", serif;
-  font-size: normal;
-  text-shadow: 4px 4px 4px rgb(206, 95, 95);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
-
+.main-title h1 {
+  color: rgb(240, 255, 242);
+  font-family: "Tangerine", serif;
+  font-size: normal;
+  text-shadow: 4px 4px 4px #aaa;
+  align-items: center;
+}
 .servises .window {
   width: 100%;
 }
 
-.services .window .service {
-  width: 83%;
+.services .window .row {
+  width: 100%;
   display: flex;
   align-items: center;
   position: relative;
 }
-.service img {
-  width: 50px;
-  height: 50px;
+.window .row a {
+  color: rgb(240, 255, 242);
+  font-family: "Tangerine", serif;
+  font-size: large;
+  text-shadow: 4px 4px 4px #aaa;
+}
+.window .row a img {
+  width: 20%;
+  height: 20%;
 }
 .slider {
-  margin-top: 5px;
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .offer {
   display: flex;
@@ -304,11 +314,11 @@ input:focus {
 .main-title a:visited {
   color: #cf3232;
 }
-
 .slideshow-container {
-  width: 100%;
-  height: 50%;
+  width: 50%;
+  height: 25%;
   position: relative;
+  margin-left: 25%;
 }
 
 /* Hide the images by default */
@@ -405,37 +415,20 @@ input:focus {
 
 #footer {
   width: 100%;
-  /* margin-top: 2%; */
+  align-items: center;
   text-align: center;
-  /* margin-left: 10%; */
+  margin-top: 1%;
 }
 .footer_content .row .container ul {
   display: flex;
   width: 100%;
   list-style-type: none;
 }
-
-/* .footer_content .row .container ul li:hover {
-  color: rgb(240, 255, 242);
-  font-family: "Tangerine", serif;
-  font-size: normal;
-  text-shadow: 4px 4px 4px #aaa;
-  position: relative;
-  background-color: #aaa;
-} */
-
 .footer_content .row .container ul li:hover {
-  color: rgb(123, 153, 127);
-  font-family: "Tangerine", serif;
-  font-size: normal;
-  text-shadow: 4px 4px 4px rgb(168, 125, 125);
-  /* width: 100px;
   color: rgb(240, 255, 242);
   font-family: "Tangerine", serif;
-  font-size: normal;
+  font-size: large;
   text-shadow: 4px 4px 4px #aaa;
-  background-color: #aaa; */
-  /* margin-left: 85px; */
 }
 .footer_a {
   color: rgb(187, 235, 193);
