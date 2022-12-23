@@ -14,19 +14,21 @@
     <title>MIX TOURISM</title>
 
 <body>
-    <div class="forbackground">
-        <header id="header">
+
+    <header id="header">
+        <nav class="nav">
             <div class="container">
-                <nav class="nav">
-                    <div class="top">
-                        <div class="container" tabindex="1">
-                            <div class="row">
+                <div class="top">
+                    <div class="container" tabindex="1">
+                        <div class="row">
+                            <div class="col-6">
                                 <div class="logo">
                                     <a href="/index.html">
                                         <img src="/src/img/logo.png" alt="">
                                     </a>
                                 </div>
-
+                            </div>
+                            <div class="col-6 d-flex justify-content-end" id="logos">
                                 <div class="search-container" tabindex="1">
                                     <input type="text" placeholder="search"></input>
                                     <a class="button">
@@ -34,215 +36,219 @@
                                         <i class="fa fa-search"></i>
                                     </a>
                                 </div>
-                            </div>
-                            <div class="user">
-                                <a href="/src/html/registration.html">
-                                    <img src="/src/img/user.svg" alt="user logo">
-                                </a>
+                                <div class="user">
+                                    <a href="/src/html/registration.html">
+                                        <img src="/src/img/user.svg" alt="user logo">
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="bottom">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-8">
+                                <!-- <div class="menu "> -->
+                                    <ul class="menu-list ">
+                                        <li class="main" id="main">
+                                            <a href="/index.html">მთავარი</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.turebi.ge/ka/tours" id="item" class="item">ტურები</a>
+                                            <!-- <ul>
+                                                <li id="georgian">
+                                                    <a href="https://www.turebi.ge/ka/tours/georgia">საქართველო</a>
+                                                </li>
+                                                <li id="foreign">
+                                                    <a href="https://www.turebi.ge/ka/tours/abroad">საზღვარგარეთი</a>
+                                                </li>
+                                            </ul> -->
+                                        </li>
+                                        <!-- <li class="tours"> ტურები
+                                            <select name="" id="tour-list">
+                                                <option class="empty"></option>
+                                                <a href="https://www.turebi.ge/ka/tours/georgia">
+                                                    <option class="georgian-tours"> საქართველო</option>
+                                                </a>
+                                                <a href="https://www.turebi.ge/ka/tours/abroad">
+                                                    <option class="foreign-tours"> საზღვარგარეთი</option>
+                                                </a>
+                                            </select> -->
+                                        <li class="hotels">
+                                            <a href="https://www.turebi.ge/ka/hotels" id="hotels"
+                                                target="_self">სასტუმროები</a>
+                                        </li>
+                                        <li class="transport">
+                                            <a href="https://www.turebi.ge/ka/transport" id="transport"
+                                                target="_self">ტრანსპორტი</a>
+                                        </li>
+                                        <li class="contact">
+                                            <a href="/src/html/contact.html" id="contact" target="_self">კონტაქტი</a>
+                                        </li>
+                                    </ul>
+                                <!-- </div> -->
+                            </div>
+                            <div class="col-4">
+                                <div class="insurance">
+                                    <a href="https://www.irao.ge/ka/dazgveva/samogzauro?type=1" class="irao-btn">
+                                        <img src="/src/img/family-insurance-icon.svg" alt="insurace">
+                                        <p> <i>შეიძინე სამოგზაურო დაზღვევა</i> </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="bottom">
-                <div class="container">
-                    <div class="menu ">
-                        <ul class="menu-list ">
-                            <li class="main" id="main"> <a href="/index.html">მთავარი</a></li>
-                            <li>
-                                <a href="https://www.turebi.ge/ka/tours" id="item" class="item">ტურები</a>
-                                <!-- <ul>
-                                    <li id="georgian">
-                                        <a href="https://www.turebi.ge/ka/tours/georgia">საქართველო</a>
-                                    </li>
-                                    <li id="foreign">
-                                        <a href="https://www.turebi.ge/ka/tours/abroad">საზღვარგარეთი</a>
-                                    </li>
-                                </ul> -->
-                            </li>
-                            <!-- <li class="tours"> ტურები
-                                <select name="" id="tour-list">
-                                    <option class="empty"></option>
-                                    <a href="https://www.turebi.ge/ka/tours/georgia">
-                                        <option class="georgian-tours"> საქართველო</option>
-                                    </a>
-                                    <a href="https://www.turebi.ge/ka/tours/abroad">
-                                        <option class="foreign-tours"> საზღვარგარეთი</option>
-                                    </a>
-                                </select> -->
-                            </li>
-                            <li class="contact">
-                                <a href="/src/html/registration.html" id="hotels" target="_self">სასტუმროები</a>
-                            </li>
-                            <li class="contact">
-                                <a href="/src/html/registration.html" id="transport" target="_self">ტრანსპორტი</a>
-                            </li>
-                            <li class="contact">
-                                <a href="/src/html/contact.html" id="contact" target="_self">კონტაქტი</a>
-                            </li>
+        </nav>
+    </header>
+
+    <section id="section1">
+        <div class="container">
+            <div class="services">
+                <div class="main-title">
+                    <h1>ყველა ტურისტული სერვისი ერთ სივრცეში</h1>
+                    <p>ისარგებლე ყველა სერვისით ერთ სივრცეში</p>
+                </div>
+                <div class="window">
+                    <div class="row ">
+                        <div class="irao col-2">
+                            <a href="https://www.irao.ge/ka/dazgveva/samogzauro?type=1" class="service">
+                                <img src="/src/img/family-insurance-icon.svg" alt="insurace">სამოგზაურო
+                                დაზღვევა</a>
+                        </div>
+                        <div class="col-2">
+                            <a href="https://www.turebi.ge/ka/services/tour" class="service">
+                                <img src="/src/img/travel_icon.svg" alt="">
+                                ტურები</a>
+
+                        </div>
+                        <div class="col-2">
+                            <a href="https://www.turebi.ge/ka/services/airticket" class="service">
+                                <img src="/src/img/plane.png" alt="">
+                                ავია ბილეთები</a>
+                        </div>
+                        <div class="col-2">
+                            <a href="https://www.turebi.ge/ka/services/hotel" class="service">
+                                <img src="/src/img/hotel-63.svg" alt="">
+                                სასტუმრო</a>
+                        </div>
+                        <div class="col-2">
+                            <a href="https://www.turebi.ge/ka/services/transfer" class="service">
+                                <img src="/src/img/minibus-C.svg" alt="">
+                                ტრანსფერი</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="offer">
+                    <h2 class="main-title">დღის შეთავაზება</h2>
+
+                </div>
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade" id="mySlides fade">
+                        <div class="numbertext">1 / 6</div>
+                        <a href="https://www.turebi.ge/ka/tours/65859">
+                            <img src="/src/img/directions/zanzibar2.jpg" style="width:100%">
+                        </a>
+                        <div class="text">ზანზიბარი, ტანზანია</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 6</div>
+                        <a href=""><img src="/src/img/directions/shri-lanka.jpg" style="width:100%"></a>
+                        <div class="text">შრი-ლანკა</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 6</div>
+                        <a href="https://www.turebi.ge/ka/tours/65855">
+                            <img src="/src/img/directions/sharm el-sheikh.jpg" style="width:100%">
+                        </a>
+                        <div class="text">შარმ ელ შეიხი</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">5 / 6</div>
+                        <a href="https://www.turebi.ge/ka/tours/65829">
+                            <img src="/src/img/directions/abu dabi.jpg" style="width:100%">
+                        </a>
+                        <div class="text"> აბუ დაბი</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">5 / 6</div>
+                        <a href="https://www.turebi.ge/ka/tours/65825">
+                            <img src="/src/img/directions/barcelona.jpg" style="width:100%">
+                        </a>
+                        <div class="text">ბარსელონა</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">6 / 6</div>
+                        <a href="https://www.turebi.ge/ka/tours/65822">
+                            <img src="/src/img/directions/paris.jpg" style="width:100%">
+                        </a>
+                        <div class="text">პარიზი</div>
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <!-- The dots/circles -->
+                <div class="dots">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+            <div class="footer_content">
+                <div class="row">
+                    <div class="container">
+                        <ul>
+                            <div class="col-2">
+                                <li>
+                                    <a href="#main" class="footer_a">მთავარი</a>
+                                </li>
+                            </div>
+                            <div class="col-2">
+                                <li>
+                                    <a href="#item" class="footer_a">ტურები</a>
+                                </li>
+                            </div>
+                            <div class="col-2">
+                                <li>
+                                    <a href="#hotels" class="footer_a">სასტუმროები</a>
+                                </li>
+                            </div>
+                            <div class="col-2">
+                                <li>
+                                    <a href="#transport" class="footer_a">ტრანსპორტი</a>
+                                </li>
+                            </div>
+                            <div class="col-2">
+                                <li>
+                                    <a href="#contact" class="footer_a">კონტაქტი</a>
+                                </li>
+                            </div>
+
                         </ul>
                     </div>
-                    <div class="insurance">
-                        <a href="https://www.irao.ge/ka/dazgveva/samogzauro?type=1" class="irao-btn">
-                            <img src="/src/img/family-insurance-icon.svg" alt="insurace">
-                            <p> <i>შეიძინე სამოგზაურო დაზღვევა</i> </p>
-                        </a>c
-                    </div>
                 </div>
-                <section id="section1">
-                    <div class="container">
-                        <div class="services">
-                            <div class="main-title">
-                                <h1>ყველა ტურისტული სერვისი ერთ სივრცეში</h1>
-                                <p>ისარგებლე ყველა სერვისით ერთ სივრცეში</p>
-                            </div>
-                            <div class="window">
-                                <div class="row ">
-                                    <div class="irao col-2">
-                                        <a href="https://www.irao.ge/ka/dazgveva/samogzauro?type=1" class="service">
-                                            <img src="/src/img/family-insurance-icon.svg" alt="insurace">სამოგზაურო
-                                            დაზღვევა</a>
-                                    </div>
-                                    <div class="col-2">
-                                        <a href="#" class="service">
-                                            <img src="/src/img/travel_icon.svg" alt="">
-                                            ტურები</a>
 
-                                    </div>
-                                    <div class="col-2">
-                                        <a href="#" class="service">
-                                            <img src="/src/img/plane.png" alt="">
-                                            ავია ბილეთები</a>
-                                    </div>
-                                    <div class="col-2">
-                                        <a href="#" class="service">
-                                            <img src="/src/img/hotel-63.svg" alt="">
-                                            სასტუმრო</a>
-                                    </div>
-                                    <div class="col-2">
-                                        <a href="#" class="service">
-                                            <img src="/src/img/minibus-C.svg" alt="">
-                                            ტრანსფერი</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider">
-                            <div class="offer">
-
-                                <a href="#">
-                                    <h2 class="main-title">დღის შეთავაზება</h2>
-                                </a>
-                            </div>
-                            <div class="slideshow-container">
-
-                                <!-- Full-width images with number and caption text -->
-                                <div class="mySlides fade">
-                                    <div class="numbertext">1 / 6</div>
-                                    <a href="https://www.turebi.ge/ka/tours/65859">
-                                        <img src="/src/img/zanzibar2.jpg" style="width:100%">
-                                    </a>
-                                    <div class="text">ზანზიბარი, ტანზანია</div>
-                                </div>
-
-                                <div class="mySlides fade">
-                                    <div class="numbertext">2 / 6</div>
-                                    <a href=""><img src="/src/img/shri-lanka.jpg" style="width:100%"></a>
-                                    <div class="text">შრი-ლანკა</div>
-                                </div>
-
-                                <div class="mySlides fade">
-                                    <div class="numbertext">3 / 6</div>
-                                    <a href="https://www.turebi.ge/ka/tours/65855">
-                                        <img src="/src/img/sharm el-sheikh.jpg" style="width:100%">
-                                    </a>
-                                    <div class="text">შარმ ელ შეიხი</div>
-                                </div>
-                                <div class="mySlides fade">
-                                    <div class="numbertext">5 / 6</div>
-                                    <a href="https://www.turebi.ge/ka/tours/65829">
-                                        <img src="/src/img/abu dabi.jpg" style="width:100%">
-                                    </a>
-                                    <div class="text"> აბუ დაბი</div>
-                                </div>
-                                <div class="mySlides fade">
-                                    <div class="numbertext">5 / 6</div>
-                                    <a href="https://www.turebi.ge/ka/tours/65825">
-                                        <img src="/src/img/barcelona.jpg" style="width:100%">
-                                    </a>
-                                    <div class="text">ბარსელონა</div>
-                                </div>
-                                <div class="mySlides fade">
-                                    <div class="numbertext">6 / 6</div>
-                                    <a href="https://www.turebi.ge/ka/tours/65822">
-                                        <img src="/src/img/paris.jpg" style="width:100%">
-                                    </a>
-                                    <div class="text">პარიზი</div>
-                                </div>
-
-                                <!-- Next and previous buttons -->
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                            </div>
-                            <br>
-
-                            <!-- The dots/circles -->
-                            <div class="dots">
-                                <span class="dot" onclick="currentSlide(1)"></span>
-                                <span class="dot" onclick="currentSlide(2)"></span>
-                                <span class="dot" onclick="currentSlide(3)"></span>
-                                <span class="dot" onclick="currentSlide(4)"></span>
-                                <span class="dot" onclick="currentSlide(5)"></span>
-                                <span class="dot" onclick="currentSlide(6)"></span>
-                            </div>
-                        </div>
-
-                        <div class="hotels-block"></div>
-                        <div class="transport-block"></div>
-                    </div>
-                </section>
             </div>
-            </nav>
-    </div>
+        </footer>
+    </section>
 
-    </header>
-    </div>
-    <footer id="footer">
-        <div class="footer_content">
-            <div class="row">
-                <div class="container">
-                    <ul>
-                        <div class="col-2">
-                            <li>
-                                <a href="#main" class="footer_a">მთავარი</a>
-                            </li>
-                        </div>
-                        <div class="col-2">
-                            <li>
-                                <a href="#item" class="footer_a">ტურები</a>
-                            </li>
-                        </div>
-                        <div class="col-2">
-                            <li>
-                                <a href="#hotels" class="footer_a">სასტუმროები</a>
-                            </li>
-                        </div>
-                        <div class="col-2">
-                            <li>
-                                <a href="#transport" class="footer_a">ტრანსპორტი</a>
-                            </li>
-                        </div>
-                        <div class="col-2">
-                            <li>
-                                <a href="#contact" class="footer_a">კონტაქტი</a>
-                            </li>
-                        </div>
-
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-    </footer>
 
 
 
